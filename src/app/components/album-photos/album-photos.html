@@ -1,0 +1,12 @@
+<h2>Photos of Album {{ albumId }}</h2>
+
+<div *ngIf="loading">Loading...</div>
+
+<div class="grid" *ngIf="!loading">
+  <div *ngFor="let photo of photos" class="photo">
+    <img [src]="photo.thumbnailUrl" [alt]="photo.title">
+    <p>{{ photo.title }}</p>
+  </div>
+</div>
+
+<button [routerLink]="['/albums', albumId]">Back</button>

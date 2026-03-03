@@ -1,0 +1,26 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li a {
+  text-decoration: none;
+  color: #1976d2;
+}
+
+button {
+  padding: 4px 8px;
+  border: none;
+  background: #e53935;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
